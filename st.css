@@ -1,0 +1,208 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: whitesmoke;
+}
+header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background-color: black;
+  color: rgb(16, 217, 16);
+  z-index: 99;
+}
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.1rem;
+  color: rgb(43, 194, 43);
+  text-decoration: none;
+  text-shadow: #000;
+  text-transform: uppercase;
+}
+.box {
+  color: aliceblue;
+  position: relative;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  padding: 3px;
+  background-color: rgb(43, 194, 43);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  z-index: 99;
+  line-height: 20px;
+  color: #000;
+}
+#c {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-top: 10px;
+}
+img {
+  width: 100%;
+  height: 200px;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 4rem;
+}
+h2.tittle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.shopcontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1.5rem;
+  justify-content: center;
+  align-content: center;
+}
+.food-box {
+  background-color: rgb(43, 194, 43);
+  padding: 10px;
+  box-shadow: 0 2px 4px black;
+  border-radius: 3px;
+  position: relative;
+}
+.pic {
+  overflow: hidden;
+}
+.pic:hover img {
+  transform: scale(1.5);
+}
+.r {
+  transition: 0.5s;
+  object-fit: cover;
+}
+.carts {
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.carts:hover {
+  background-color: red;
+}
+.cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #000;
+  box-shadow: 0 10px 10px rgb(43, 194, 43);
+  z-index: 100;
+}
+.cart-active {
+  right: 0;
+  transition: 0.5s;
+}
+.cart-item {
+  text-align: center;
+  font-weight: 602;
+  font-size: 1.5rems;
+  margin-bottom: 2rem;
+  border-bottom: 0.5px solid white;
+}
+.cart-box {
+  display: grid;
+  grid-template-columns: 40% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 0 1px 10px rgb(43, 194, 43);
+  padding-bottom: 10px;
+}
+.cart-img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border: 1px solid rgb(43, 194, 43);
+  padding: 5px;
+  border-radius: 2px;
+}
+.detailsbox {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.cpriceb {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.fooddetais {
+  font-size: 15px;
+  color: red;
+  font-weight: 500;
+}
+.cart-qn {
+  width: 2.5rem;
+  border: 2px solid rgb(43, 194, 43);
+  text-align: center;
+  font-size: 1rem;
+}
+.tc {
+  font-size: 20px;
+  cursor: pointer;
+}
+.tc:hover {
+  color: red;
+}
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+.totaltitle {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.totalprice {
+  margin-left: 0.5rem;
+}
+.order {
+  display: flex;
+  padding: 12px 20px;
+  background-color: rgb(43, 194, 43);
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid white;
+  cursor: pointer;
+}
+#cart-close {
+  position: absolute;
+  top: 0;
+  font-size: 1.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+.name {
+  font-weight: 800;
+  text-decoration: double;
+}
